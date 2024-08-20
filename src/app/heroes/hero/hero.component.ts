@@ -20,6 +20,24 @@ export class HeroComponent {
     return `${this.name} - ${this.age}`;
   }
 
+  changeHero():void {
+
+    this.name = 'Spiderman';
+  }
+
+  changeAge():void {
+
+    this.age = 30;
+  }
+
+  reset():void {
+    this.name = 'Iroman';
+    this.age = 40;
+
+    //document.querySelectorAll('h1')!.forEach(elemento => {
+     // elemento.innerHTML =' <h1>DESDE SIEMPRE Y HASTA SIEMPRE </h1>' ;
+    //});
+  }
 
 
 
